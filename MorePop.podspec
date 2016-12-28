@@ -76,7 +76,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/wangwillgood/MorePop.git", :commit => '95c7a40eef94a38605026abc1fab9be0c885093d' }
+  s.source       = { :git => "https://github.com/wangwillgood/MorePop.git", :tag => "v0.0.1" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
