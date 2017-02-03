@@ -14,7 +14,7 @@
  typedef id (*IMP)(id, SEL, ...);
  
  */
-typedef void (*PopViewControllerAnimatedImp) (id,SEL, ...);
+typedef id (*PopViewControllerAnimatedImp) (id,SEL, ...);
 
 @interface NSObject (MethodJnject)
 
@@ -60,7 +60,7 @@ static PopViewControllerAnimatedImp Original_Navi_imp = NULL;
     });
 }
 
-- (void)cdf_popViewControllerAnimated:(BOOL)animated{
+- (UIViewController *)cdf_popViewControllerAnimated:(BOOL)animated{
     
     UIViewController *viewController = [self.viewControllers lastObject];
     if (viewController) {
@@ -68,7 +68,8 @@ static PopViewControllerAnimatedImp Original_Navi_imp = NULL;
             viewController.cdf_PopGestureCompletion(animated);
         }
     }
-    Original_Navi_imp(self,_cmd,animated);
+    id result = (*Original_Navi_imp)(self,_cmd,animated);
+    return result;
 }
 
 @end
@@ -91,7 +92,7 @@ static PopViewControllerAnimatedImp Original_Modal_imp = NULL;
 }
 
 - (void)cdf_dismissViewControllerAnimated:(BOOL)animated completion:(void (^__nullable)(void))completion{
-
+    
     if (self.enableCapturePopCompletion && self.cdf_PopGestureCompletion) {
         self.cdf_PopGestureCompletion(animated);
     }

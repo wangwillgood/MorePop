@@ -1,26 +1,21 @@
 //
-//  PushViewController.m
+//  BaseNavigationController.m
 //  Demo
 //
-//  Created by 王望 on 16/12/27.
-//  Copyright © 2016年 Will. All rights reserved.
+//  Created by 王望 on 2017/2/3.
+//  Copyright © 2017年 Will. All rights reserved.
 //
 
-#import "PushViewController.h"
-#import <MorePop/MorePop.h>
+#import "BaseNavigationController.h"
 
-@interface PushViewController ()
+@interface BaseNavigationController ()
 
 @end
 
-@implementation PushViewController
+@implementation BaseNavigationController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.enableCapturePopCompletion = YES;
-    self.cdf_PopGestureCompletion = ^(BOOL animated){
-        NSLog(@"~~~~~~~~~~~~Push -> Pop~~~~~~~~~~~~~");
-    };
     // Do any additional setup after loading the view.
 }
 
@@ -38,8 +33,10 @@
     // Pass the selected object to the new view controller.
 }
 */
-- (IBAction)buttonclick:(UIButton *)sender {
-    [self.navigationController popViewControllerAnimated:YES];
+
+- (UIViewController *)popViewControllerAnimated:(BOOL)animated{
+    
+    return [super popViewControllerAnimated:animated];
 }
 
 @end

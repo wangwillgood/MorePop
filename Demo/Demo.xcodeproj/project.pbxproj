@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B0D65C61E4455A700E9F7D0 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B0D65C51E4455A700E9F7D0 /* BaseNavigationController.m */; };
 		3BE682711E125BB500969B44 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BE682701E125BB500969B44 /* main.m */; };
 		3BE682741E125BB500969B44 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BE682731E125BB500969B44 /* AppDelegate.m */; };
 		3BE682771E125BB500969B44 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BE682761E125BB500969B44 /* ViewController.m */; };
@@ -19,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B0D65C41E4455A700E9F7D0 /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
+		3B0D65C51E4455A700E9F7D0 /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
 		3BE6826C1E125BB500969B44 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BE682701E125BB500969B44 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3BE682721E125BB500969B44 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -76,6 +79,8 @@
 				3BE6828A1E125E3B00969B44 /* PushViewController.m */,
 				3BE6828C1E125E4700969B44 /* PresentViewController.h */,
 				3BE6828D1E125E4700969B44 /* PresentViewController.m */,
+				3B0D65C41E4455A700E9F7D0 /* BaseNavigationController.h */,
+				3B0D65C51E4455A700E9F7D0 /* BaseNavigationController.m */,
 				3BE682781E125BB500969B44 /* Main.storyboard */,
 				3BE6827B1E125BB500969B44 /* Assets.xcassets */,
 				3BE6827D1E125BB500969B44 /* LaunchScreen.storyboard */,
@@ -174,6 +179,7 @@
 			files = (
 				3BE6828E1E125E4700969B44 /* PresentViewController.m in Sources */,
 				3BE682771E125BB500969B44 /* ViewController.m in Sources */,
+				3B0D65C61E4455A700E9F7D0 /* BaseNavigationController.m in Sources */,
 				3BE682741E125BB500969B44 /* AppDelegate.m in Sources */,
 				3BE6828B1E125E3B00969B44 /* PushViewController.m in Sources */,
 				3BE682711E125BB500969B44 /* main.m in Sources */,
